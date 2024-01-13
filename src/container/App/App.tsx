@@ -56,7 +56,7 @@ function App() {
       return (
         <div>
           <p>Order is empty!</p>
-          <p>Please some items!</p>
+          <p>Please add some items!</p>
         </div>
       );
     }
