@@ -1,6 +1,6 @@
 import React from 'react';
 import './FastFoodItem.css';
-import {FastfoodItem} from '../type';
+import {FastfoodItem} from '../../type';
 
 interface Props extends FastfoodItem {
   addItem: React.MouseEventHandler;

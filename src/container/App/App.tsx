@@ -1,6 +1,6 @@
 import './App.css';
-import  {useState} from 'react';
-import FastFoodItem from '../../FastFoodItem/FastFoodItem';
+import {useState} from 'react';
+import FastFoodItem from '../../components/FastFoodItem/FastFoodItem';
 import {FASTFOODITEMS} from './constants';
 import removeItemImg from '../../assets/remove.png';
 
@@ -60,8 +60,6 @@ function App() {
         </div>
       );
     }
-
-
   };
 
   return (
