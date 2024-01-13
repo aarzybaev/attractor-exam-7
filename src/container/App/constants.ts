@@ -4,7 +4,7 @@ import friedImg from '../../assets/fried.png';
 import coffeeImg from '../../assets/coffee.png';
 import teaImg from '../../assets/tea.png';
 import colaImg from '../../assets/cola.png';
-export const FASTFOOD_ITEMS:FastfoodItem[] = [
+export const FASTFOODITEMS:FastfoodItem[] = [
   {name: 'Hamburger', price: 80, image: burgerImg},
   {name: 'Cheeseburger', price: 90, image: burgerImg},
   {name: 'Fries', price: 45, image: friedImg},
