@@ -40,6 +40,10 @@
   font-weight: bold;
   padding-right: 25px;
 }
+
+p {
+  margin: 0;
+}
 .ff-order-item-remove {
   display: inline-block;
   width: 16px;

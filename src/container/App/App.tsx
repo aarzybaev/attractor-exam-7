@@ -36,7 +36,7 @@ function App() {
     return FASTFOODITEMS[index].price;
   };
 
-  const getAmount = (): number => {
+  const getAmount = () => {
     let amount = 0;
     order.forEach(item => {
       const name = item.name;
@@ -44,7 +44,24 @@ function App() {
       const price = getPrice(name);
       amount += count * price;
     });
-    return amount;
+    if (amount) {
+      return (
+        <div className="ff-order-item-amount">
+          <span>Total price:</span>
+          <span>{amount} KGS</span>
+        </div>
+      );
+
+    } else {
+      return (
+        <div>
+          <p>Order is empty!</p>
+          <p>Please some items!</p>
+        </div>
+      );
+    }
+
+
   };
 
   return (
@@ -67,11 +84,7 @@ function App() {
             })
         }
         <hr/>
-        <div className="ff-order-item-amount">
-          <span>Total price:</span>
-          <span>{getAmount()} KGS</span>
-        </div>
-
+        {getAmount()}
       </fieldset>
       <fieldset className="ff-items">
         <legend>Add items:</legend>
